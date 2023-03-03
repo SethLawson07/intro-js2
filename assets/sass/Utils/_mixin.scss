@@ -56,7 +56,7 @@
       margin-left: 7vh;
       margin-right: 0.5vh;
       margin-top: 1.5vh;
-     
+      cursor: pointer;
     }
 
    
@@ -137,8 +137,8 @@
     }
     .product {
       display: grid;
-      grid-template-columns: 1fr 2fr; /* une colonne pour l'image et une colonne pour les balises p */
-      align-items: center; /* aligne le contenu verticalement */
+      grid-template-columns: 1fr 2fr; 
+      align-items: center; 
       margin: 1vh;
     }
     
@@ -172,8 +172,28 @@
     .comment{
       margin-left: 2.5vh;
     }
- 
     
+    .hidden{
+      display: none;
+    }
+    .show{
+      display: block;
+    }
+    .nb{
+      position: relative;
+      left: -2.5vh;
+      background-color: #ee5253;
+      top: 1vh;
+      padding: 0.5vh;
+      display: block;
+      color: #fff;
+      border-radius: 50%;
+      width: 2vh;
+      height: 2vh;
+      font-size: 1.5vh;
+      font-weight: bold;
+      text-align: center;
+    }
     
 }
 
@@ -229,7 +249,7 @@
             content: '';
             
           }
-        } // Dropdown list
+        } 
       
       }
     }
@@ -335,20 +355,20 @@
   }
 
     
-  /* Hide Dropdowns by Default */
+  
   nav ul ul {
     display: none;
     position: absolute; 
-    top: 60px; /* the height of the main nav */
+    top: 60px;
   }
     
-  /* Display Dropdowns on Hover */
+  
   nav ul li:hover > ul {
     display:inherit;
     border-top: 2px solid #ee5253;
   }
     
-  /* Fisrt Tier Dropdown */
+  
   nav ul ul li {
     width:170px;
     float:none;
@@ -359,7 +379,7 @@
     
   }
 
-    /* Second, Third and more Tiers	*/
+  
   nav ul ul ul li {
     position: relative;
     top:-60px; 
@@ -750,12 +770,11 @@ input:checked + .slide-container .nav label { display: block; }
 
 
 @mixin main__section2() {
- 
+  
     .main__section2{
         text-align: center;
-       // margin: 3vh;
-       margin-top: 3vh;
-       margin-bottom: 3vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
         hr {
           border: 0;
           height: 3px;
@@ -773,15 +792,20 @@ input:checked + .slide-container .nav label { display: block; }
         &--end {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          margin: 2vh;
+         // margin: 2vh;
+          margin-left: 2vh;
+          margin-right: 2vh;
+         
           &content{
             margin: 3vh;
+            
           }
         img{
-            width: 100%;
-            height: 30vh;
+            width: 88.5%;
+            height: 33vh;
             cursor: pointer;
             object-fit: cover;
+            
            
             &:hover{
                 animation: zoomIn 3s ease-in-out;
@@ -790,18 +814,18 @@ input:checked + .slide-container .nav label { display: block; }
 
         }
         &--content {
-          margin-right: 15vh;
-      
-
+          margin-right: 17vh;
           .tags{
             border-end-end-radius: 3px;
             border-top-right-radius: 3px;
             width: 7vh;
             padding: 0.5vh;
             position: relative;
-           top: 13vh;
+            top: 13vh;
             left: 0vh;
             color: #fff;
+            font-weight: bold;
+            background-color: $tags-one;
             &__one{
               background-color: $tags-one;
             }
@@ -819,10 +843,10 @@ input:checked + .slide-container .nav label { display: block; }
             width: 100%;
             height: 7.2vh;
             position: relative;
-            top: -23vh;
+            top: -25vh;
             left: -0.5vh;
             display: none;
-            //visibility: hidden;
+            
             
             .icon--search {
               margin-top: 2vh;
@@ -837,11 +861,12 @@ input:checked + .slide-container .nav label { display: block; }
             } 
 
             .add{
+              margin-top: 1vh;
               color: #fff;
-              padding: 1.5vh;
-              font-size: 2vh;            
+              padding: 1vh;
+              font-size: 2.3vh;            
               :hover{
-                //background-color: $color;
+              
               }
               
             }
@@ -868,7 +893,14 @@ input:checked + .slide-container .nav label { display: block; }
               width: 100%;
               height: 50vh;
               cursor: pointer;
-             
+              border-radius: 1vh;
+            }
+            .name{
+              color: rebeccapurple;
+              font-size: 2.5vh;
+            }
+            .price{
+              font-family: 'Courier New', Courier, monospace;
             }
           }
           .row:hover .card {
@@ -877,7 +909,7 @@ input:checked + .slide-container .nav label { display: block; }
             }
 
         }   
-                               /* Masque le modal au chargement de la page */
+                              
 .modal-container {
   display: none;
   position: fixed;
@@ -887,11 +919,10 @@ input:checked + .slide-container .nav label { display: block; }
   width: 100%;
   height: 100%;
   overflow: auto;
- // background-color: rgba(0,0,0,0.4);
+ 
  
 }
 
-/* Style du modal */
 .modal {
   background-color: white;
   margin: auto;
@@ -905,13 +936,12 @@ input:checked + .slide-container .nav label { display: block; }
   
 }
 
-/* Style de l'en-tête du modal */
 .modal-header {
   display: flex;
   justify-content: flex-end;
 }
 
-/* Style du bouton de fermeture */
+
 .close {
   font-size: 24px;
   font-weight: bold;
@@ -923,13 +953,13 @@ input:checked + .slide-container .nav label { display: block; }
 .fa-circle-check{
   color: #27ae60;
 }
-/* Style du contenu du modal */
+
 .modal-content {
   margin-top: 10px;
 }
 
 
-/* Style du bouton pour ouvrir le modal */
+
 .open-modal {
   cursor: pointer;
   color: rebeccapurple;
@@ -940,6 +970,12 @@ input:checked + .slide-container .nav label { display: block; }
   color: #fff;
   padding: 2vh;
   border: none;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
 }
     }
  

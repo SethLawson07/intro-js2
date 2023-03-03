@@ -30,31 +30,31 @@
     },
     {
       "id":5,
-      "name": "RED ROSE BOUQUET",
-      "price": 20.00,
-      "image": "./assets/img/img13.png",
+      "name": "HEART'S DESIRE",
+      "price": 15.00,
+      "image": "./assets/img/img20.png",
       "tag" : "Hot"
   },
   
   {
     "id":6,
-    "name": "RED ROSE BOUQUET",
-    "price": 20.00,
-    "image": "./assets/img/img14.png",
-    "tag" : "Hot"
+    "name": "ASSORTED ROSES",
+    "price": 17.00,
+    "image": "./assets/img/img21.png",
+    "tag" : "15%"
 },
 {
   "id":7,
-  "name": "RED ROSE BOUQUET",
-  "price": 20.00,
-  "image": "./assets/img/img10.png",
+  "name": "ROSES SURPRISE",
+  "price": 12.00,
+  "image": "./assets/img/img22.png",
   "tag" : "Hot"
 },
 {
   "id":8,
-  "name": "RED ROSE BOUQUET",
-  "price": 20.00,
-  "image": "./assets/img/img14.png",
+  "name": "TROPICAL PEACE LILY",
+  "price": 14.00,
+  "image": "./assets/img/img23.png",
   "tag" : "Hot"
 }
   ]

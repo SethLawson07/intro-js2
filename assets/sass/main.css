@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @keyframes zoomIn {
@@ -186,20 +185,17 @@ nav ul li a:not(:only-child):after {
   transform: rotate(-45deg);
 }
 
-/* Hide Dropdowns by Default */
 nav ul ul {
   display: none;
   position: absolute;
-  top: 60px; /* the height of the main nav */
+  top: 60px;
 }
 
-/* Display Dropdowns on Hover */
 nav ul li:hover > ul {
   display: inherit;
   border-top: 2px solid #ee5253;
 }
 
-/* Fisrt Tier Dropdown */
 nav ul ul li {
   width: 170px;
   float: none;
@@ -207,7 +203,6 @@ nav ul ul li {
   position: relative;
 }
 
-/* Second, Third and more Tiers	*/
 nav ul ul ul li {
   position: relative;
   top: -60px;
@@ -282,6 +277,7 @@ input {
   margin-left: 7vh;
   margin-right: 0.5vh;
   margin-top: 1.5vh;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -353,8 +349,8 @@ input {
 
 .product {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* une colonne pour l'image et une colonne pour les balises p */
-  align-items: center; /* aligne le contenu verticalement */
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
   margin: 1vh;
 }
 
@@ -388,6 +384,30 @@ input {
 
 .comment {
   margin-left: 2.5vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.nb {
+  position: relative;
+  left: -2.5vh;
+  background-color: #ee5253;
+  top: 1vh;
+  padding: 0.5vh;
+  display: block;
+  color: #fff;
+  border-radius: 50%;
+  width: 2vh;
+  height: 2vh;
+  font-size: 1.5vh;
+  font-weight: bold;
+  text-align: center;
 }
 
 .carousel {
@@ -733,14 +753,15 @@ main {
 .main__section2--end {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 2vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
 }
 .main__section2--endcontent {
   margin: 3vh;
 }
 .main__section2--end img {
-  width: 100%;
-  height: 30vh;
+  width: 88.5%;
+  height: 33vh;
   cursor: pointer;
   -o-object-fit: cover;
      object-fit: cover;
@@ -749,13 +770,7 @@ main {
   animation: zoomIn 3s ease-in-out;
 }
 .main__section2--content {
-  margin-right: 15vh;
-  /* Masque le modal au chargement de la page */
-  /* Style du modal */
-  /* Style de l'en-tête du modal */
-  /* Style du bouton de fermeture */
-  /* Style du contenu du modal */
-  /* Style du bouton pour ouvrir le modal */
+  margin-right: 17vh;
 }
 .main__section2--content .tags {
   border-end-end-radius: 3px;
@@ -766,6 +781,8 @@ main {
   top: 13vh;
   left: 0vh;
   color: #fff;
+  font-weight: bold;
+  background-color: #27ae60;
 }
 .main__section2--content .tags__one {
   background-color: #27ae60;
@@ -781,7 +798,7 @@ main {
   width: 100%;
   height: 7.2vh;
   position: relative;
-  top: -23vh;
+  top: -25vh;
   left: -0.5vh;
   display: none;
 }
@@ -796,9 +813,10 @@ main {
   color: #fff;
 }
 .main__section2--content .card .add {
+  margin-top: 1vh;
   color: #fff;
-  padding: 1.5vh;
-  font-size: 2vh;
+  padding: 1vh;
+  font-size: 2.3vh;
 }
 .main__section2--content .one {
   display: flex;
@@ -818,6 +836,14 @@ main {
   width: 100%;
   height: 50vh;
   cursor: pointer;
+  border-radius: 1vh;
+}
+.main__section2--content .one .row .name {
+  color: rebeccapurple;
+  font-size: 2.5vh;
+}
+.main__section2--content .one .row .price {
+  font-family: "Courier New", Courier, monospace;
 }
 .main__section2--content .one .row:hover .card {
   display: flex;
@@ -871,6 +897,12 @@ main {
   color: #fff;
   padding: 2vh;
   border: none;
+}
+.main__section2--content .show {
+  display: block;
+}
+.main__section2--content .hidden {
+  display: none;
 }
 
 @media (max-width: 992px) {
