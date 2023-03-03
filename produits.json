@@ -1,0 +1,61 @@
+[
+    {
+      "id":1,
+      "name": "THE WHITE ROSE",
+      "price": 16.00,
+      "tag" : "10%",
+      "image": "./assets/img/img10.png"
+    },
+  
+    {
+      "id":2,
+      "name": "PREMIUM JOYFUL",
+      "price": 18.00,
+      "image": "./assets/img/img12.png",
+      "tag" : "Hot"
+    },
+    {
+      "id":3,
+      "name": "PINK FLOWER TREE",
+      "price": 18.00,
+      "image": "./assets/img/img13.png",
+      "tag" : "12%"
+    },
+    {
+        "id":4,
+        "name": "RED ROSE BOUQUET",
+        "price": 20.00,
+        "image": "./assets/img/img14.png",
+        "tag" : "Hot"
+    },
+    {
+      "id":5,
+      "name": "RED ROSE BOUQUET",
+      "price": 20.00,
+      "image": "./assets/img/img13.png",
+      "tag" : "Hot"
+  },
+  
+  {
+    "id":6,
+    "name": "RED ROSE BOUQUET",
+    "price": 20.00,
+    "image": "./assets/img/img14.png",
+    "tag" : "Hot"
+},
+{
+  "id":7,
+  "name": "RED ROSE BOUQUET",
+  "price": 20.00,
+  "image": "./assets/img/img10.png",
+  "tag" : "Hot"
+},
+{
+  "id":8,
+  "name": "RED ROSE BOUQUET",
+  "price": 20.00,
+  "image": "./assets/img/img14.png",
+  "tag" : "Hot"
+}
+  ]
+  

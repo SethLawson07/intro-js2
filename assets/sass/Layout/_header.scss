@@ -1,0 +1,55 @@
+@import "../Utils/variables";
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body{
+  font-family: 'FreeMono, monospace';
+  background-color: bg-main-end-color;
+  overflow-x: hidden;
+  margin: 0 auto;
+
+}
+
+
+.navigation {
+  height: $nav-height;
+  background: $nav-background;
+}
+
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  
+ 
+
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+
+  }
+}
+
+header{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+@include navbar;
+@include top__header;
+@include carrousel;
+@include end__header;
+

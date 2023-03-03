@@ -1,0 +1,11 @@
+main{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+@include main__section1;
+@include main__section2;
+@include main__section3;
+@include main__section4;
+@include main_end;
