@@ -770,7 +770,7 @@ main {
   animation: zoomIn 3s ease-in-out;
 }
 .main__section2--content {
-  margin-right: 17vh;
+  margin-right: 20vh;
 }
 .main__section2--content .tags {
   border-end-end-radius: 3px;
