@@ -13,11 +13,19 @@ closeBtn.addEventListener('click', () => {
 
   const nbCart = document.querySelector('.nb');
 
-  
+/**
+* Updates the content of the 'nbCart' element with the number of items in local storage.
+*/
 function displayNbCart(){
     nbCart.innerHTML = localStorage.length
-  }
+}
 
+
+/**
+ *  Displays the items in the cart with their corresponding details.
+ *   @function
+ *   @returns {void}
+ */
 function displayCart(){
   
     cart.innerHTML="";
@@ -53,5 +61,5 @@ function displayCart(){
     `;
     total.innerHTML +=totalElement;
   
-    }
+}
   
