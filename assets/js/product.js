@@ -79,6 +79,7 @@ function addProduct(cardElement,product){
         
 }
 
+
 function displayProducts(products) {
   products.forEach(product => {
         const productElement = document.createElement("div");
@@ -87,7 +88,7 @@ function displayProducts(products) {
         ${product.tag=="Hot" ? 
         `<p class="tags tags__two" itemprop="label">${product.tag}</p>` : 
         `<p class="tags tags__one" itemprop="label">${product.tag}</p> `}
-        <img src="${product.image}" alt="${product.name}" class="">
+        <img src="${product.image}" alt="${product.name}" >
         <h5 class="name">${product.name}</h5>
         <span class="price">$${product.price}</span>
       `;
