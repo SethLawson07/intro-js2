@@ -1,3 +1,4 @@
+import { fetchProducts } from "./services";
 
 const divOne = document.querySelector(".one");
 
@@ -148,9 +149,18 @@ function search(name){
  * and performs a search on the products.
  * @param {Array} data - The products to be processed.
  */
- export function processProducts(products) {
+ function processProducts(products) {
   divOne.innerHTML = "";
   displayProducts(products);
   displayNbCart();
   search(products);
 }
+
+/**
+ * Retrieves products using the fetchProducts() function and processes it using the processProducts() function.
+ * @function
+ */
+fetchProducts()
+.then(products => {
+  processProducts(products);
+});
