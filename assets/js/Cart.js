@@ -30,17 +30,17 @@ function displayCart(){
   
     cart.innerHTML="";
     total.innerHTML="";
-    const data = []
+    const products = []
   
     for (let i = 0; i < localStorage.length; i++) {  
         let key = localStorage.key(i);
         const obj = localStorage.getItem(key)
         const value = JSON.parse(obj)
-        data.push(value)
+        products.push(value)
     }
   
     var totalPrice = 0;
-    data.forEach((product) => {
+    products.forEach((product) => {
     const { name, image, price, qte } = product;
     totalPrice+=price
     

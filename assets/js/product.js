@@ -125,11 +125,11 @@ function displayProducts(products) {
  * Searches for products based on user input.
  * @param {Array} data - An array of products to search through.
  */
-function search(data){
+function search(name){
   var searchInput = document.getElementById("search");
   searchInput.addEventListener("input", function(event) {
       var searchTerm = event.target.value.toLowerCase(); 
-      var filteredProducts = data.filter(function(product) {
+      var filteredProducts = name.filter(function(product) {
           return product.name.toLowerCase().includes(searchTerm);
       });
         divOne.innerHTML = "";
@@ -141,41 +141,16 @@ function search(data){
 
 
 
-/**
- * Asynchronously fetches data from the JSON file located at './produits.json'.
- * @throws {Error} If the HTTP response status is not OK.
- * @returns {Promise<Array>} An array containing the parsed JSON data.
- */
-async function fetchData() {
-  try {
-    const response = await fetch('./produits.json');
-    if (!response.ok) {
-      throw new Error("Erreur HTTP " + response.status);
-    }
-    return await response.json();
-  } catch (error) {
-    console.error(error);
-  }
-}
 
 /**
- * Processes the given data.
+ * Processes the given products.
  * Clears the content of 'divOne', displays the products, updates the number of products in the cart,
- * and performs a search on the data.
- * @param {Array} data - The data to be processed.
+ * and performs a search on the products.
+ * @param {Array} data - The products to be processed.
  */
-function processData(data) {
+function processProducts(products) {
   divOne.innerHTML = "";
-  displayProducts(data);
+  displayProducts(products);
   displayNbCart();
-  search(data);
+  search(products);
 }
-
-/**
- * Retrieves data using the fetchData() function and processes it using the processData() function.
- * @function
- */
-fetchData()
-  .then(data => {
-    processData(data);
-  });
