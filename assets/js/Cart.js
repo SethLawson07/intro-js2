@@ -1,5 +1,8 @@
 const panierBtn = document.querySelector('.panier-btn');
 const closeBtn = document.querySelector('.close-btn');
+const total = document.querySelector('.total');
+const cart = document.querySelector('.data-cart');
+const modalOverlay = document.querySelector('.modal-overlay');
 
 panierBtn.addEventListener('click', () => {
     modalOverlay.classList.add("show")

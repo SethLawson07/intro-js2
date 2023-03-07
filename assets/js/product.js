@@ -1,7 +1,7 @@
-const modalOverlay = document.querySelector('.modal-overlay');
+
 const divOne = document.querySelector(".one");
-const cart = document.querySelector('.data-cart');
-const total = document.querySelector('.total');
+
+
 displayCart();
 
 
@@ -148,7 +148,7 @@ function search(name){
  * and performs a search on the products.
  * @param {Array} data - The products to be processed.
  */
-function processProducts(products) {
+ function processProducts(products) {
   divOne.innerHTML = "";
   displayProducts(products);
   displayNbCart();

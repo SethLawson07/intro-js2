@@ -1,3 +1,5 @@
+import { processProducts } from "./product";
+
 
 /**
  * Asynchronously fetches products from the JSON file located at './produits.json'.
