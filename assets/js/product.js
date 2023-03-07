@@ -148,7 +148,7 @@ function search(name){
  * and performs a search on the products.
  * @param {Array} data - The products to be processed.
  */
- function processProducts(products) {
+ export function processProducts(products) {
   divOne.innerHTML = "";
   displayProducts(products);
   displayNbCart();
