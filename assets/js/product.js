@@ -1,4 +1,4 @@
-import { fetchProducts } from "./services";
+import { fetchProducts } from "./services.js";
 
 const divOne = document.querySelector(".one");
 
