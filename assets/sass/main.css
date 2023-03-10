@@ -1260,4 +1260,91 @@ hr {
   .details .details__content a {
     font-size: 12px;
   }
+}
+.line-cart {
+  color: #353b48;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+}
+.cart__name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cart__qte {
+  background-color: #f5f6fa;
+  padding: 2vh;
+}
+.cart__qte--price {
+  font-family: "Courier New", Courier, monospace;
+}
+.cart__qte--input {
+  height: 3vh;
+  width: 10vh;
+  border-radius: 0;
+  background-color: #f5f6fa;
+  border-color: #f5f6fa;
+  text-align: center;
+}
+.cart__qte--input:focus {
+  outline: 2px solid rebeccapurple;
+}
+.cart__pricexqte {
+  font-weight: bold;
+  color: rebeccapurple;
+}
+
+.Form {
+  margin: 10vh;
+  padding-bottom: 5vh;
+  background-color: #ffffff;
+}
+.Form input {
+  border-radius: 0;
+  margin: 2vh;
+}
+.Form input:focus {
+  outline: 2px solid rebeccapurple;
+}
+.Form__personal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2vh;
+}
+.Form__others {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2vh;
+}
+.Form__notes {
+  display: flex;
+  justify-content: center;
+}
+
+.Total {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+}
+.Total__price {
+  font-size: 3vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.Total button {
+  background-color: #fff;
+  border: 3px solid;
+  padding: 2vh 8vh 2vh 8vh;
+  border-color: rebeccapurple;
+  border-radius: 1vh;
+  color: rebeccapurple;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
