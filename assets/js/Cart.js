@@ -13,6 +13,7 @@ closeBtn.addEventListener('click', () => {
     modalOverlay.classList.add("hidden")
   });
 
+  
 
   const nbCart = document.querySelector('.nb');
 
